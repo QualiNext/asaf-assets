@@ -18,7 +18,7 @@ data "aws_iam_user" "input_user" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "asaf-bucket-wow" #var.name
+  bucket = var.name
   acl    = "private"
   force_destroy = true
 
