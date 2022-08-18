@@ -29,7 +29,7 @@ resource "aws_s3_bucket" "bucket" {
   }
 }
 
-resource "aws_s3_bucket" "bucket" {
+resource "aws_s3_bucket" "bucket2" {
   bucket = "asaf-bucket-wow3" #var.name
   acl    = "public-read"
   force_destroy = true
